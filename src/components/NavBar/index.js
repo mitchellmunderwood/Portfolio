@@ -16,8 +16,8 @@ function NavBar(props) {
 
                         </Route>
                         <Route exact path={["/About","/Posts","/Post","/Projects","/Project"]}>
-                            <h3 id="toggler-initials" className="text-center"><NavLink to="/" ><strong>M</strong>U</NavLink></h3>
-                            <h3 id="toggler-name" className="text-center"><NavLink to="/" ><strong>Mitchell</strong> Underwood</NavLink></h3> 
+                            <h3 id="toggler-initials" className="text-center"><NavLink to="/Portfolio" ><strong>M</strong>U</NavLink></h3>
+                            <h3 id="toggler-name" className="text-center"><NavLink to="/Portfolio" ><strong>Mitchell</strong> Underwood</NavLink></h3> 
                         </Route>
                     </div>
                     
