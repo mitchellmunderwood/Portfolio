@@ -1,0 +1,78 @@
+.card-img-container {
+  padding: 20px 20px 20px 20px;
+}
+
+.card {
+  border: none;
+  transition: box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.line-blue {
+  background: #039be5;
+}
+
+.line-green {
+  background: #43a047;
+}
+
+.line-red {
+  background: #e53935;
+}
+
+.line-yellow {
+  background: #ffeb3b;
+}
+
+.line-orange {
+  background: #ff8f00;
+}
+
+.line-brown {
+  background: #795548;
+}
+
+.line-gray {
+  background: #546e7a;
+}
+
+.line-black {
+  background: #212121;
+}
+
+/* Project Based Colors */
+
+.line-parentConnect {
+  background: rgb(32, 50, 106);
+}
+.line-partyPlanner {
+  background: rgb(235, 99, 104);
+}
+.line-burger {
+  background: rgb(243, 158, 61);
+}
+.line-weather {
+  background: rgb(22, 99, 219);
+}
+.line-quiz {
+  background: rgb(118, 38, 117);
+}
+.line-password {
+  background: rgb(166, 35, 31);
+}
+
+.line-password2 {
+  background: rgb(117, 0, 247);
+}
+
+.line-portfolio2 {
+  background: rgb(209, 226, 241);
+}
+
+.line-politiCandid {
+  background: rgb(255, 0, 0);
+}

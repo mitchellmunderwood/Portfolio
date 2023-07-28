@@ -1,0 +1,44 @@
+#main-article {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.bd-placeholder-img {
+  height: 380px;
+  width: 100%;
+}
+
+.card {
+  border: none;
+}
+
+#no-hover-shadow:hover {
+  box-shadow: none;
+}
+
+.badges {
+  margin-bottom: 20px;
+}
+
+#contact-block {
+  margin-top: 0px;
+}
+
+.contact {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.contact:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+button {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.profile {
+  padding: 0px;
+}

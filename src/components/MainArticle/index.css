@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+  #main-article-photo {
+    height: 380px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #main-article-photo {
+    height: 380px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #main-article-photo {
+    height: 600px;
+  }
+}

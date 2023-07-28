@@ -1,0 +1,30 @@
+footer {
+  padding: 50px 0px;
+  box-shadow: 0 -0.1875rem 0.125rem #efefef;
+  background: #fff;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+  color: #5f6368;
+  font-weight: 400;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: #5f6368;
+}
+
+footer a:hover {
+  color: #5f6368;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    display: none;
+  }
+}

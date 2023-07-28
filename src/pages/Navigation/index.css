@@ -1,0 +1,14 @@
+.bland-link {
+  color: #424242;
+}
+
+.bland-link:hover {
+  color: #424242;
+  text-decoration: none;
+}
+
+/* * {
+  font-family: "Roboto";
+  color: #424242;
+  background: #fff;
+} */
