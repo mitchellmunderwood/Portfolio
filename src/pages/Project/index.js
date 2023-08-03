@@ -7,7 +7,7 @@ import { useStoreContext } from '../../store/store';
 import { Redirect } from 'react-router-dom';
 
 function Project() {
-  const [state, dispatch] = useStoreContext();
+  const [state] = useStoreContext();
 
   console.log('Project Page', state.project[0] === undefined);
 

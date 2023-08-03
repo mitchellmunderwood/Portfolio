@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.1",
     "@testing-library/user-event": "^12.2.2",
     "express": "^4.17.1",
+    "prop-types": "^15.8.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -23,7 +24,9 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,9 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "gh-pages": "^5.0.0",
     "prettier": "^3.0.1"
   }

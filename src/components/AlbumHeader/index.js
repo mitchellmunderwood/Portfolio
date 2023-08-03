@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
-import { NavLink, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export default function AlbumHeader(props) {
   const { title, subtitle } = props;
@@ -21,3 +22,8 @@ export default function AlbumHeader(props) {
     </div>
   );
 }
+
+AlbumHeader.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+};

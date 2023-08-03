@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 function Body(props) {
@@ -8,5 +9,9 @@ function Body(props) {
     </main>
   );
 }
+
+Body.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Body;

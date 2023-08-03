@@ -1,10 +1,7 @@
 import React from 'react';
 import './index.css';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import { NavLink, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 export default function NavDrawerContents(props) {
   return (
@@ -75,3 +72,7 @@ export default function NavDrawerContents(props) {
     </div>
   );
 }
+
+NavDrawerContents.propTypes = {
+  toggle: PropTypes.boolean,
+};

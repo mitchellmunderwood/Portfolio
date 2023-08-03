@@ -41,7 +41,7 @@ const reducer = (state, action) => {
   }
 };
 
-const StoreProvider = ({ value = [], ...props }) => {
+const StoreProvider = ({ ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
     page: null,
     posts: [],

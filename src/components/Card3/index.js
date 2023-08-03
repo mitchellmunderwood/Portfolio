@@ -1,8 +1,9 @@
-import React, { useCallback } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 function Card3(props) {
-  const { color, imageRef, type, title, date, description, badges, repoLink, liveLink } = props.content;
+  const { color, imageRef, title, date, description } = props.content;
 
   return (
     <div className="col-md-4">
@@ -35,5 +36,17 @@ function Card3(props) {
     </div>
   );
 }
+
+Card3.propTypes = {
+  content: PropTypes.shape({
+    color: PropTypes.string,
+    imageRef: PropTypes.string,
+    type: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    description: PropTypes.string,
+  }),
+  callback: PropTypes.function,
+};
 
 export default Card3;

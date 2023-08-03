@@ -1,6 +1,7 @@
 const data = {
   posts: [
     {
+      id: 1,
       imageRef: '/parentconnect.png',
       type: 'Post',
       title: '3rd Times the Charm (Portfolio Design and Devs)',
@@ -12,6 +13,7 @@ const data = {
   ],
   projects: [
     {
+      id: 1,
       type: 'Project',
       date: '11/15/20',
       title: 'Password Generator 1.1 MDC',
@@ -28,6 +30,7 @@ const data = {
       color: 'password2',
     },
     {
+      id: 2,
       type: 'Project',
       date: '11/25/20',
       title: 'React Portfolio 1.2',
@@ -44,6 +47,7 @@ const data = {
       color: 'portfolio2',
     },
     {
+      id: 3,
       type: 'Project',
       date: '10/20/20',
       title: 'PolitiCandid',
@@ -64,6 +68,7 @@ const data = {
       color: 'politiCandid',
     },
     {
+      id: 4,
       type: 'Project',
       date: '8/29/20',
       title: 'Parent Connect',
@@ -84,6 +89,7 @@ const data = {
     },
 
     {
+      id: 5,
       type: 'Project',
       date: '7/2/20',
       title: 'Party Planner',
@@ -102,6 +108,7 @@ const data = {
       color: 'partyPlanner',
     },
     {
+      id: 6,
       type: 'Project',
       date: '8/15/20',
       title: 'Eat-Da-Burger!',
@@ -121,6 +128,7 @@ const data = {
       color: 'burger',
     },
     {
+      id: 7,
       type: 'Project',
       date: '6/25/20',
       title: 'Daily Forecast',
@@ -138,6 +146,7 @@ const data = {
       color: 'weather',
     },
     {
+      id: 8,
       type: 'Project',
       date: '6/8/20',
       title: 'Code Quiz',
@@ -153,6 +162,7 @@ const data = {
       color: 'quiz',
     },
     {
+      id: 9,
       type: 'Project',
       date: '5/27/20',
       title: 'Password Generator',

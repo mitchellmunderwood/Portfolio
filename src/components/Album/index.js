@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 function Album(props) {
@@ -8,5 +9,9 @@ function Album(props) {
     </div>
   );
 }
+
+Album.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Album;

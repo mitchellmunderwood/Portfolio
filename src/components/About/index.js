@@ -17,13 +17,13 @@ function About() {
         </div>
         <div className="card-body">
           <p className="card-text">
-            So, here's a little about me. I'm currently training to become a top-knotch software developer. Before this,
-            I was getting a Physics degree from UNC Chapel Hill, and then a Master's in Accounting from Kenan Flagler
-            Business School. You may be assuming I'm a bit nerdy at this point, and you'd be right. I'm super into
-            science and technology. And I'm also pretty well versed in the MCU, Star Wars, and some Japanese Animes. I
-            also love to go on runs, make things out of wood, and watch comedy. I'm a big stickler for quality, design,
-            and crafting the user experience. I'm also a big proponent for keeping things simple and making sure
-            everything is as easy to follow and understand as possible. I'm trying to be a better communicator all the
+            So, here`s a little about me. I`m currently training to become a top-knotch software developer. Before this,
+            I was getting a Physics degree from UNC Chapel Hill, and then a Master`s in Accounting from Kenan Flagler
+            Business School. You may be assuming I`m a bit nerdy at this point, and you`d be right. I`m super into
+            science and technology. And I`m also pretty well versed in the MCU, Star Wars, and some Japanese Animes. I
+            also love to go on runs, make things out of wood, and watch comedy. I`m a big stickler for quality, design,
+            and crafting the user experience. I`m also a big proponent for keeping things simple and making sure
+            everything is as easy to follow and understand as possible. I`m trying to be a better communicator all the
             time and keep being okay with looking stupid when I need too.
           </p>
           <div className="badges">
@@ -60,18 +60,18 @@ function About() {
           </div>
 
           <button id="to-linkedin" type="button" className="btn btn-primary">
-            <a class="button-link" href="https://www.linkedin.com/in/mitchellmunderwood">
+            <a className="button-link" href="https://www.linkedin.com/in/mitchellmunderwood">
               Go to LinkedIn
             </a>
           </button>
           <button id="to-github" type="button" className="btn btn-dark">
-            <a class="button-link" href="https://www.github.com/mitchellmunderwood">
+            <a className="button-link" href="https://www.github.com/mitchellmunderwood">
               Go to Github
             </a>
           </button>
           <button id="to-resume" type="button" className="btn btn-secondary">
             <a
-              class="button-link"
+              className="button-link"
               href="https://www.linkedin.com/in/mitchellmunderwood/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAAB5SiFEBZ-gpkNv1miIqwVWwrQn4S9EG2Sg,1604634574699)/"
             >
               Go to Resume

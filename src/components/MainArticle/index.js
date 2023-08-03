@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
-export default function MainArticle(props) {
-  const { imageRef, type, title, date, description, badges, repoLink, liveLink } = props.content;
+function MainArticle(props) {
+  const { imageRef, type, title, date, description } = props.content;
 
   return (
     <div className="col-md-12" id="main-article">
@@ -37,3 +38,16 @@ export default function MainArticle(props) {
     </div>
   );
 }
+
+MainArticle.propTypes = {
+  content: PropTypes.shape({
+    imageRef: PropTypes.string,
+    type: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    description: PropTypes.string,
+  }),
+  callback: PropTypes.function,
+};
+
+export default MainArticle;
