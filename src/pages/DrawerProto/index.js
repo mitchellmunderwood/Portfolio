@@ -20,21 +20,17 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-        <Button onClick={toggleDrawer("left", true)}>{'left'}</Button>
-        <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
-            <div
-                role="presentation"
-                onClick={toggleDrawer("left", false)}
-                onKeyDown={toggleDrawer("left", false)}
-                >
-                <List>
-                    <ListItem button>
-                        <ListItemText primary={'this'} />
-                    </ListItem>
-                </List>
-                <Divider />
-            </div>
-        </Drawer>
+      <Button onClick={toggleDrawer('left', true)}>{'left'}</Button>
+      <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
+        <div role="presentation" onClick={toggleDrawer('left', false)} onKeyDown={toggleDrawer('left', false)}>
+          <List>
+            <ListItem button>
+              <ListItemText primary={'this'} />
+            </ListItem>
+          </List>
+          <Divider />
+        </div>
+      </Drawer>
     </div>
   );
 }
