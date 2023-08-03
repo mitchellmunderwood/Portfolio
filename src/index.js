@@ -5,14 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StoreProvider } from './store/store';
 
-
 ReactDOM.render(
   <React.StrictMode>
-    <StoreProvider >
-    <App />
+    <StoreProvider>
+      <App />
     </StoreProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
