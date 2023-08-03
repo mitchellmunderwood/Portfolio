@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 function Card1(props) {
-  const { imageRef, title, date, description, badges, repoLink, liveLink } = props;
+  const { imageRef, title, date, description } = props;
 
   return (
     <div className="col-md-10 offset-md-1" id="main-article">
@@ -39,5 +40,12 @@ function Card1(props) {
     </div>
   );
 }
+
+Card1.propTypes = {
+  imageRef: PropTypes.string,
+  title: PropTypes.string,
+  date: PropTypes.string,
+  description: PropTypes.string,
+};
 
 export default Card1;

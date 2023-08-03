@@ -1,8 +1,9 @@
 import React from 'react';
 import './index.css';
 import Button from '@material-ui/core/Button';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { NavLink, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavBar(props) {
   return (
@@ -56,5 +57,9 @@ function NavBar(props) {
     </div>
   );
 }
+
+NavBar.propTypes = {
+  toggle: PropTypes.boolean,
+};
 
 export default NavBar;

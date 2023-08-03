@@ -7,7 +7,7 @@ import { useStoreContext } from '../../store/store';
 import { Redirect } from 'react-router-dom';
 
 function Post() {
-  const [state, dispatch] = useStoreContext();
+  const [state] = useStoreContext();
 
   console.log('Post Page', state.post);
 

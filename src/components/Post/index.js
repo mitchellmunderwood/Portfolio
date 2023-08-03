@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 function Post(props) {
-  const { imageRef, type, title, date, description, badges, repoLink, liveLink } = props.content;
+  const { imageRef, title, date, description } = props.content;
 
   return (
     <div className="col-md-12 post">
@@ -27,5 +28,16 @@ function Post(props) {
     </div>
   );
 }
+
+Post.propTypes = {
+  content: PropTypes.shape({
+    imageRef: PropTypes.string,
+    type: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    description: PropTypes.string,
+  }),
+  callback: PropTypes.function,
+};
 
 export default Post;

@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './index.css';
-import { Link, useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function Project(props) {
-  const { imageRef, type, title, date, description, badges, repoLink, liveLink } = props.content;
+  const { imageRef, title, date, description, badges, repoLink, liveLink } = props.content;
 
   return (
     <div className="col-md-12 post">
@@ -27,6 +27,7 @@ function Project(props) {
             {badges.map((badge) => {
               return (
                 <img
+                  key={badge.name}
                   src={
                     'https://img.shields.io/badge/' +
                     badge.type +
@@ -41,12 +42,12 @@ function Project(props) {
             })}
           </div>
           <button type="button" className="btn btn-primary">
-            <a class="button-link" href={'https://' + liveLink}>
+            <a className="button-link" href={'https://' + liveLink}>
               Go to Live
             </a>
           </button>
           <button type="button" className="btn btn-secondary">
-            <a class="button-link" href={'https://' + repoLink}>
+            <a className="button-link" href={'https://' + repoLink}>
               Go to Repo
             </a>
           </button>
@@ -55,5 +56,19 @@ function Project(props) {
     </div>
   );
 }
+
+Project.propTypes = {
+  content: PropTypes.shape({
+    imageRef: PropTypes.string,
+    type: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    description: PropTypes.string,
+    badges: PropTypes.array,
+    repoLink: PropTypes.string,
+    liveLink: PropTypes.string,
+  }),
+  callback: PropTypes.function,
+};
 
 export default Project;
