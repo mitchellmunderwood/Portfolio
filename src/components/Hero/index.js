@@ -1,14 +1,14 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 
 function Hero() {
-  return (
+
+    return (
     <div className="jumbotron">
-      <h1 className="text-center">
-        <strong>Mitchell</strong> Underwood
-      </h1>
+        <h1 className="text-center"><strong>Mitchell</strong> Underwood</h1>
     </div>
-  );
+    )
+
 }
 
 export default Hero;
