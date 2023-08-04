@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="jumbotron">
       <h1 className="text-center">
-        <strong>Mitchell</strong> Underwood
+        <strong>Mitchel</strong> Underwood
       </h1>
     </div>
   );
