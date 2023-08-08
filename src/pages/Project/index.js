@@ -4,7 +4,7 @@ import Body from '../../components/Body/index';
 import Album from '../../components/Album/index';
 import ProjectCard from '../../components/Project/index';
 import { useStoreContext } from '../../store/store';
-import { Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 function Project() {
   const [state] = useStoreContext();
@@ -15,7 +15,7 @@ function Project() {
     <div>
       <Body>
         <Album>
-          {state.project[0] === undefined ? <Redirect to="/Projects" /> : <ProjectCard content={state.project[0]} />}
+          {state.project[0] === undefined ? <Navigate to="/Projects" /> : <ProjectCard content={state.project[0]} />}
         </Album>
       </Body>
     </div>

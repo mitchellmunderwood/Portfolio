@@ -5,15 +5,15 @@ import Album from '../../components/Album/index';
 import Card3 from '../../components/Card3/index';
 import { useStoreContext } from '../../store/store';
 import { SET_PROJECT } from '../../store/actions';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Projects() {
   const [state, dispatch] = useStoreContext();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const projectCallback = (name) => {
     dispatch({ type: SET_PROJECT, project: state.projects.filter((project) => project.title === name) });
-    history.push('/Project');
+    navigate('/Project');
   };
 
   return (

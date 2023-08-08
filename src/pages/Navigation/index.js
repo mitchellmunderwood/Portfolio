@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 
 import NavBar from '../../components/NavBar/index';
-import Drawer from '@material-ui/core/Drawer';
+import Drawer from '@mui/material/Drawer';
 import NavDrawerContents from '../../components/NavDrawerContents/index';
 
 function Navigation() {

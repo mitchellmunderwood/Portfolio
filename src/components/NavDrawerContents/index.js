@@ -69,5 +69,5 @@ export default function NavDrawerContents(props) {
 }
 
 NavDrawerContents.propTypes = {
-  toggle: PropTypes.boolean,
+  toggle: PropTypes.func,
 };

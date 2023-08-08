@@ -45,7 +45,7 @@ Card2.propTypes = {
     date: PropTypes.string,
     description: PropTypes.string,
   }),
-  callback: PropTypes.function,
+  callback: PropTypes.func,
 };
 
 export default Card2;
