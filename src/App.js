@@ -11,8 +11,6 @@ import Footer from './components/Footer/index';
 import Landing from './pages/Landing/index';
 import Projects from './pages/Projects/index';
 import Project from './pages/Project/index';
-import Posts from './pages/Posts/index';
-import Post from './pages/Post/index';
 import Author from './pages/Author/index';
 import Hero from './components/Hero/index';
 
@@ -34,8 +32,6 @@ const App = () => {
           <Route exact path="/Portfolio" component={Landing} />
           <Route exact path="/Projects" component={Projects} />
           <Route exact path="/Project" component={Project} />
-          <Route exact path="/Posts" component={Posts} />
-          <Route exact path="/Post" component={Post} />
           <Route exact path="/About" component={Author} />
         </Switch>
         <Route path="/" component={Footer} />

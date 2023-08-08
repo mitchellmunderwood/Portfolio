@@ -15,7 +15,7 @@ function NavBar(props) {
               <span className="navbar-toggler-icon"></span>
             </Button>
             <Route exact path="/"></Route>
-            <Route exact path={['/About', '/Posts', '/Post', '/Projects', '/Project']}>
+            <Route exact path={['/About', '/Projects', '/Project']}>
               <h3 id="toggler-initials" className="text-center">
                 <NavLink to="/Portfolio">
                   <strong>M</strong>U
@@ -31,9 +31,6 @@ function NavBar(props) {
 
           <div id="nav-center" className="inner d-flex justify-content-center align-items-center">
             <nav id="toggler-nav" className="nav nav-masthead justify-content-center">
-              <NavLink to="/Posts" id="link-blog" className="nav-link " activeClassName="nav-link active-red">
-                Posts
-              </NavLink>
               <NavLink to="/Projects" id="link-project" className="nav-link" activeClassName="nav-link active-blue">
                 Projects
               </NavLink>

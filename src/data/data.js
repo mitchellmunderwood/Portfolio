@@ -1,16 +1,4 @@
 const data = {
-  posts: [
-    {
-      id: 1,
-      imageRef: '/parentconnect.png',
-      type: 'Post',
-      title: '3rd Times the Charm (Portfolio Design and Devs)',
-      date: '12/4/20',
-      description: 'My design and development journey from developing three seperate portfolio applications.',
-      body: ['There is no body yet'],
-      color: 'parentConnect',
-    },
-  ],
   projects: [
     {
       id: 1,

@@ -20,11 +20,6 @@ export default function NavDrawerContents(props) {
               </h4>
             </NavLink>
           </a>
-          <a className="mdc-list-item " aria-selected="true">
-            <span className="mdc-list-item__text">
-              <NavLink to="/Posts">Posts</NavLink>
-            </span>
-          </a>
           <a className="mdc-list-item">
             <span className="mdc-list-item__text">
               <NavLink to="/Projects">Projects</NavLink>

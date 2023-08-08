@@ -6,7 +6,7 @@ function Project(props) {
   const { imageRef, title, date, description, badges, repoLink, liveLink } = props.content;
 
   return (
-    <div className="col-md-12 post">
+    <div className="col-md-12 project">
       <div className="card mb-1" id="no-hover-shadow">
         <h1 className="title">{title}</h1>
         <div className="card-img-container">
