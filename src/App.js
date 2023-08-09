@@ -7,7 +7,6 @@ import data from './data/data';
 import './App.css';
 
 import Navigation from './pages/Navigation/index';
-import Footer from './components/Footer/index';
 import Landing from './pages/Landing/index';
 import Projects from './pages/Projects/index';
 import Project from './pages/Project/index';
@@ -18,7 +17,6 @@ const App = () => {
 
   useEffect(() => {
     dispatch({ type: SET_CONTENT, content: data });
-
     console.log('state', state);
   }, []);
 
@@ -32,7 +30,6 @@ const App = () => {
           <Route exact path="/Project" element={<Project />} />
           <Route exact path="/About" element={<Author />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );

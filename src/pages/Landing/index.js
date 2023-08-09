@@ -8,7 +8,6 @@ import Card2 from '../../components/Card2/index';
 import { useStoreContext } from '../../store/store';
 import { SET_PROJECT } from '../../store/actions';
 import { useNavigate } from 'react-router-dom';
-import Hero from '../../components/Hero/index';
 
 function Landing() {
   const [state, dispatch] = useStoreContext();
@@ -21,7 +20,6 @@ function Landing() {
 
   return (
     <div>
-      <Hero />
       <Body>
         <Album>
           {state.projects.slice(0, 1).map((main) => {
