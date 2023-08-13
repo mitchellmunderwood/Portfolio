@@ -2,22 +2,23 @@ import React from 'react';
 import './index.css';
 import Body from '../../components/Body/index';
 import Album from '../../components/Album/index';
-import PostCard from '../../components/Post/index';
+import Card3 from '../../components/Card3/index';
 import { useStoreContext } from '../../store/store';
-import { Redirect } from 'react-router-dom';
 
-function Post() {
+function Works() {
   const [state] = useStoreContext();
-
-  console.log('Post Page', state.post);
 
   return (
     <div>
       <Body>
-        <Album>{state.post[0] === undefined ? <Redirect to="/Posts" /> : <PostCard content={state.post[0]} />}</Album>
+        <Album>
+          {state.projects.map((project) => {
+            return <Card3 key={project.id} content={project} />;
+          })}
+        </Album>
       </Body>
     </div>
   );
 }
 
-export default Post;
+export default Works;

@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 
 import NavBar from '../../components/NavBar/index';
-import Drawer from '@material-ui/core/Drawer';
-import NavDrawerContents from '../../components/NavDrawerContents/index';
+import Drawer from '@mui/material/Drawer';
+import NavDrawer from '../../components/NavDrawer/index';
 
 function Navigation() {
   const [state, setState] = React.useState({
@@ -20,7 +20,7 @@ function Navigation() {
   return (
     <div className="NavigationParent">
       <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
-        <NavDrawerContents toggle={toggleDrawer} />
+        <NavDrawer toggle={toggleDrawer} />
       </Drawer>
       <NavBar toggle={toggleDrawer} />
     </div>

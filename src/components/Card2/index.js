@@ -9,10 +9,10 @@ function Card2(props) {
     <div className="col-md-6">
       <div
         className="card mb-1 mr-1"
-        onClick={() => {
-          props.callback(title);
-          window.scrollTo(0, 0);
-        }}
+        // onClick={() => {
+        //   props.callback(title);
+        //   window.scrollTo(0, 0);
+        // }}
       >
         <div className="card-img-container">
           <img
@@ -45,7 +45,7 @@ Card2.propTypes = {
     date: PropTypes.string,
     description: PropTypes.string,
   }),
-  callback: PropTypes.function,
+  // callback: PropTypes.func,
 };
 
 export default Card2;

@@ -1,10 +1,10 @@
 import React from 'react';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import Drawer from '@mui/material//Drawer';
+import Button from '@mui/material//Button';
+import List from '@mui/material//List';
+import Divider from '@mui/material//Divider';
+import ListItem from '@mui/material//ListItem';
+import ListItemText from '@mui/material//ListItemText';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({

@@ -22,16 +22,6 @@ function Footer() {
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
-                  to="/Posts"
-                >
-                  Posts
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                  }}
                   to="/Projects"
                 >
                   Projects

@@ -4,7 +4,7 @@ import Body from '../../components/Body/index';
 import Album from '../../components/Album/index';
 import About from '../../components/About/index';
 
-function Author() {
+function Resume() {
   return (
     <div>
       <Body>
@@ -16,4 +16,4 @@ function Author() {
   );
 }
 
-export default Author;
+export default Resume;

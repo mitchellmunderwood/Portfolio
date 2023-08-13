@@ -7,7 +7,7 @@ function Card1(props) {
 
   return (
     <div className="col-md-10 offset-md-1" id="main-article">
-      <div className="card mb-1 post">
+      <div className="card mb-1 project">
         <h1 className="title">{title}</h1>
         <div className="card-img-container">
           <img
