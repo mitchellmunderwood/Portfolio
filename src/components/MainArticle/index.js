@@ -10,7 +10,7 @@ function MainArticle(props) {
       <div
         className="card mb-1"
         onClick={() => {
-          props.callback(title);
+          // props.callback(title);
           window.scrollTo(0, 0);
         }}
       >
@@ -47,7 +47,7 @@ MainArticle.propTypes = {
     date: PropTypes.string,
     description: PropTypes.string,
   }),
-  callback: PropTypes.func,
+  // callback: PropTypes.func,
 };
 
 export default MainArticle;

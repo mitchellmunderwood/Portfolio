@@ -7,10 +7,9 @@ import data from './data/data';
 import './App.css';
 
 import Navigation from './pages/Navigation/index';
-import Landing from './pages/Landing/index';
-import Projects from './pages/Projects/index';
-import Project from './pages/Project/index';
-import Author from './pages/Author/index';
+import Portfolio from './pages/Portfolio/index';
+import Works from './pages/Works/index';
+import Resume from './pages/Resume/index';
 
 const App = () => {
   const [state, dispatch] = useStoreContext();
@@ -25,10 +24,9 @@ const App = () => {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route exact path="/Portfolio" element={<Landing />} />
-          <Route exact path="/Projects" element={<Projects />} />
-          <Route exact path="/Project" element={<Project />} />
-          <Route exact path="/About" element={<Author />} />
+          <Route exact path="/Portfolio" element={<Portfolio />} />
+          <Route exact path="/Works" element={<Works />} />
+          <Route exact path="/Resume" element={<Resume />} />
         </Routes>
       </BrowserRouter>
     </div>

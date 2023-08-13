@@ -2,24 +2,23 @@ import React from 'react';
 import './index.css';
 import Body from '../../components/Body/index';
 import Album from '../../components/Album/index';
-import ProjectCard from '../../components/Project/index';
+import Card3 from '../../components/Card3/index';
 import { useStoreContext } from '../../store/store';
-import { Navigate } from 'react-router-dom';
 
-function Project() {
+function Works() {
   const [state] = useStoreContext();
-
-  console.log('Project Page', state.project[0] === undefined);
 
   return (
     <div>
       <Body>
         <Album>
-          {state.project[0] === undefined ? <Navigate to="/Projects" /> : <ProjectCard content={state.project[0]} />}
+          {state.projects.map((project) => {
+            return <Card3 key={project.id} content={project} />;
+          })}
         </Album>
       </Body>
     </div>
   );
 }
 
-export default Project;
+export default Works;
