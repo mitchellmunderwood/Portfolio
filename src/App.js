@@ -18,10 +18,8 @@ import Hero from './components/Hero/index';
 
 const App = () => {
   const [state, dispatch] = useStoreContext();
-
   useEffect(() => {
     dispatch({ type: SET_CONTENT, content: data });
-
     console.log('state', state);
   }, []);
 
