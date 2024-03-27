@@ -19,7 +19,7 @@ const data = {
       title: 'Password Generator 1.1 MDC',
       description: 'Stay safe with secure passwords.',
       imageRef: '/password2.png',
-      repoLink: 'github.com/mitchellmunderwood/Password-Generator-1.1-MDC',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Password-Generator-1.1-MDC',
       liveLink: 'mitchellmunderwood.github.io/Password-Generator-1.1-MDC/',
       badges: [
         { type: 'Code', name: 'JS' },
@@ -36,7 +36,7 @@ const data = {
       title: 'React Portfolio 1.2',
       description: 'A minimalist portfolio, built in React.',
       imageRef: '/portfolio2.png',
-      repoLink: 'github.com/mitchellmunderwood/Portfolio-1.2-React',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Portfolio-1.2-React',
       liveLink: 'mitchellmunderwood.github.io/Portfolio-1.2-React/',
       badges: [
         { type: 'Code', name: 'JS' },
@@ -53,7 +53,7 @@ const data = {
       title: 'PolitiCandid',
       description: 'Know where people stand on the important issues.',
       imageRef: '/politicandid.png',
-      repoLink: 'github.com/mitchellmunderwood/PolitiCandid',
+      repoLink: 'https://www.github.com/mitchellmunderwood/PolitiCandid',
       liveLink: 'mu-politicandid.herokuapp.com/',
       badges: [
         { type: 'Code', name: 'JS' },
@@ -74,7 +74,7 @@ const data = {
       title: 'Parent Connect',
       description: 'Homeschool together during COVID',
       imageRef: '/parentconnect.png',
-      repoLink: 'github.com/mitchellmunderwood/Parent-Connect',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Parent-Connect',
       liveLink: 'parent-connect.herokuapp.com/',
       badges: [
         { type: 'Code', name: 'JS' },
@@ -95,7 +95,7 @@ const data = {
       title: 'Party Planner',
       description: 'Discover meals and cocktails',
       imageRef: '/party_planner.png',
-      repoLink: 'github.com/mitchellmunderwood/Party-Planning-Committee',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Party-Planning-Committee',
       liveLink: 'mitchellmunderwood.github.io/Party-Planning-Committee/',
       badges: [
         { type: 'Code', name: 'JavaScript' },
@@ -114,7 +114,7 @@ const data = {
       title: 'Eat-Da-Burger!',
       description: 'Eat delicious burgers',
       imageRef: '/burgers.png',
-      repoLink: 'github.com/mitchellmunderwood/Burger-Buddy',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Burger-Buddy',
       liveLink: 'burger-buddy-mu.herokuapp.com/',
       badges: [
         { type: 'Code', name: 'JavaScript' },
@@ -134,7 +134,7 @@ const data = {
       title: 'Daily Forecast',
       description: 'Get your local weather',
       imageRef: '/weather.png',
-      repoLink: 'github.com/mitchellmunderwood/Weather-App',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Weather-App',
       liveLink: 'mitchellmunderwood.github.io/Weather-App/',
       badges: [
         { type: 'Code', name: 'JavaScript' },
@@ -152,7 +152,7 @@ const data = {
       title: 'Code Quiz',
       description: 'Test your JS knowledge',
       imageRef: '/quiz.png',
-      repoLink: 'github.com/mitchellmunderwood/Code-Quiz',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Code-Quiz',
       liveLink: 'mitchellmunderwood.github.io/Code-Quiz/',
       badges: [
         { type: 'Code', name: 'JavaScript' },
@@ -168,7 +168,7 @@ const data = {
       title: 'Password Generator',
       description: 'Stay safe with secure passwords',
       imageRef: '/password.png',
-      repoLink: 'github.com/mitchellmunderwood/Password-Generator',
+      repoLink: 'https://www.github.com/mitchellmunderwood/Password-Generator',
       deployLink: 'mitchellmunderwood.github.io/Password-Generator/',
       badges: [{ type: 'Code', name: 'JavaScript' }],
       color: 'password',
