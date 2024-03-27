@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 function Body(props) {
-  return (
-    <main role="main">
-      <div className="container">{props.children}</div>
-    </main>
-  );
+  return <main className="body">{props.children}</main>;
 }
 
 Body.propTypes = {

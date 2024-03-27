@@ -1,5 +1,5 @@
 import { React, createContext, useContext, useReducer } from 'react';
-import { SET_CONTENT, SET_PAGE, SET_POST, SET_PROJECT } from './actions';
+import { SET_CONTENT, SET_PAGE, SET_PROJECT } from './actions';
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -21,13 +21,6 @@ const reducer = (state, action) => {
         page: action.page,
       };
 
-    case SET_POST:
-      console.log('Reducer - set page to: ', action.post);
-      return {
-        ...state,
-        post: action.post,
-      };
-
     case SET_PROJECT:
       console.log('Reducer - set page to: ', action.project);
       return {
@@ -44,8 +37,6 @@ const reducer = (state, action) => {
 const StoreProvider = ({ ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
     page: null,
-    posts: [],
-    post: {},
     projects: [],
     project: {},
     description: '',
