@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <!-- image/logo link -->
-  <a href="https://whoismitchell.com"><img src="./README-support/logo.png" alt="title" width="200" height="200" ></a>
+  <a href="https://www.mitchellunderwood.com"><img src="./README-support/logo.png" alt="title" width="200" height="200" ></a>
   
   Portfolio-1.3-React
   <br>
@@ -39,24 +39,7 @@ A portfolio website, built with react.
 
 ### Live
 
-Portfolio-1.3-React is currently deployed with Github. <a href="https://whoismitchell.com">Go to Live</a>.
-<br/>
-
-### Gallery
-
-<p align="center">
-    <img src="./README-support/img1.png" width="auto" height="auto">
-</p>
-<p align="center">
-    <img src="./README-support/img2.png" width="auto" height="auto">
-</p>
-<p align="center">
-    <img src="./README-support/img3.png" width="auto" height="auto">
-</p>
-<p align="center">
-    <img src="./README-support/img4.png" width="auto" height="auto">
-</p>
-
+Portfolio-1.3-React is currently deployed with Github. <a href="https://www.mitchellunderwood@gmail.com">Go to Live</a>.
 <br/>
 
 ### Description
@@ -147,6 +130,6 @@ Mitchell Underwood
 <br/>
 <a href="https://github.com/mitchellmunderwood">Github</a> •
 <a href="https://www.linkedin.com/in/mitchellmunderwood/">LinkedIn</a> •
-<a href="https://whoismitchell.com">Porfolio</a>
+<a href="https://mitchellunderwood.com">Porfolio</a>
 
 </p>
