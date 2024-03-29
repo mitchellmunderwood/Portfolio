@@ -39,7 +39,7 @@ A portfolio website, built with react.
 
 ### Live
 
-Portfolio-1.3-React is currently deployed with Github. <a href="https://www.mitchellunderwood@gmail.com">Go to Live</a>.
+Portfolio-1.3-React is currently deployed with Github. <a href="https://www.mitchellunderwood.com">Go to Live</a>.
 <br/>
 
 ### Description
