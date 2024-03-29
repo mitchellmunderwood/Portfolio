@@ -10,7 +10,7 @@ function NavBar() {
 
   return (
     <nav className="navBar">
-      <NavLink className="nav-link" activeClassName="nav-link-underline" id="nav-link-home" to="/home">
+      <NavLink className="nav-link" activeClassName="nav-link-underline" id="nav-link-home" to="/">
         Home
       </NavLink>
       <NavLink className="nav-link" activeClassName="nav-link-underline" id="nav-link-portfolio" to="/portfolio">
