@@ -1,24 +1,48 @@
+/* eslint-disable react/jsx-key */
 import React from 'react';
 import './index.css';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-// import { StoreProvider } from '../../store/store';
+import { useStoreContext } from '../../store/store';
+import { SET_PAGE } from '../../store/actions';
 
 function NavBar() {
-  // const [state, setState] = StoreProvider();
-  // const page = state.page;
+  const [state, dispatch] = useStoreContext();
+  const pages = [
+    { title: 'Home', id: 'home', link: '' },
+    { title: 'Portfolio', id: 'portfolio', link: 'portfolio' },
+    { title: 'Resume', id: 'resume', link: 'resume' },
+  ];
 
   return (
     <nav className="navBar">
-      <NavLink className="nav-link" activeClassName="nav-link-underline" id="nav-link-home" to="/">
-        Home
-      </NavLink>
-      <NavLink className="nav-link" activeClassName="nav-link-underline" id="nav-link-portfolio" to="/portfolio">
-        Portfolio
-      </NavLink>
-      <NavLink className="nav-link" activeClassName="nav-link-underline" id="nav-link-resume" to="/resume">
-        Resume
-      </NavLink>
+      {pages.map((page) => {
+        if (state.page === page.title) {
+          return (
+            <NavLink
+              key={page.id}
+              onClick={() => dispatch({ type: SET_PAGE, page: page.title })}
+              className="nav-link nav-link-underline"
+              id={`nav-link-${page.id}`}
+              to={`${page.link}`}
+            >
+              {page.title}
+            </NavLink>
+          );
+        } else {
+          return (
+            <NavLink
+              key={page.id}
+              onClick={() => dispatch({ type: SET_PAGE, page: page.title })}
+              className="nav-link"
+              id={`nav-link-${page.id}`}
+              to={`${page.link}`}
+            >
+              {page.title}
+            </NavLink>
+          );
+        }
+      })}
       <a
         className="nav-link"
         id="nav-link-linkedin"
@@ -41,8 +65,8 @@ function NavBar() {
   );
 }
 
-NavBar.propTypes = {
-  toggle: PropTypes.boolean,
-};
+// NavBar.propTypes = {
+//   toggle: PropTypes.boolean,
+// };
 
 export default NavBar;

@@ -22,7 +22,7 @@ const reducer = (state, action) => {
       };
 
     case SET_PROJECT:
-      console.log('Reducer - set page to: ', action.project);
+      console.log('Reducer - set project to: ', action.project);
       return {
         ...state,
         project: action.project,
@@ -36,7 +36,7 @@ const reducer = (state, action) => {
 
 const StoreProvider = ({ ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
-    page: null,
+    page: 'Home',
     projects: [],
     project: {},
     description: '',
