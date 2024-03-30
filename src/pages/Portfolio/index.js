@@ -17,7 +17,7 @@ function Portfolio() {
       <h1 className="portfolio-title">Portfolio</h1>
       <Album>
         {state.projects.map((project) => {
-          return <Card key={project.name} content={project} callback={projectCallback} />;
+          return <Card key={project.title} content={project} callback={projectCallback} />;
         })}
       </Album>
     </Body>

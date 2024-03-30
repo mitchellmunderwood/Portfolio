@@ -35,7 +35,7 @@ Card.propTypes = {
     repoLink: PropTypes.string,
     badges: PropTypes.array,
   }),
-  callback: PropTypes.function,
+  callback: PropTypes.func,
 };
 
 export default Card;
