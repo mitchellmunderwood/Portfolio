@@ -1,5 +1,5 @@
 import { React, createContext, useContext, useReducer } from 'react';
-import { SET_CONTENT, SET_PAGE, SET_PROJECT } from './actions';
+import { SET_CONTENT, SET_PAGE, SET_SKILLSET, TOGGLE_SKILL } from './actions';
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -7,10 +7,9 @@ const { Provider } = StoreContext;
 const reducer = (state, action) => {
   switch (action.type) {
     case SET_CONTENT:
-      console.log('Reducer - set content to:, action.content');
+      console.log('Reducer - set content to:', action.content);
       return {
         ...state,
-        posts: action.content.posts,
         projects: action.content.projects,
       };
 
@@ -21,12 +20,30 @@ const reducer = (state, action) => {
         page: action.page,
       };
 
-    case SET_PROJECT:
-      console.log('Reducer - set project to: ', action.project);
+    case SET_SKILLSET:
+      console.log('Reducer - set skillset to: ', action.skillSet);
       return {
         ...state,
-        project: action.project,
+        skillSet: action.skillSet,
+        filteredSkills: [],
       };
+
+    case TOGGLE_SKILL:
+      console.log('Reducer - toggle for skill: ', action.skill);
+      if (state.filteredSkills.includes(action.skill)) {
+        const newFilteredSkills = [...state.filteredSkills].filter((skill) => skill !== action.skill);
+        return {
+          ...state,
+          filteredSkills: newFilteredSkills,
+        };
+      } else {
+        const newFilteredSkills = [...state.filteredSkills];
+        newFilteredSkills.push(action.skill);
+        return {
+          ...state,
+          filteredSkills: newFilteredSkills,
+        };
+      }
 
     default:
       console.log('Reducer - Default, Return State:', action);
@@ -38,8 +55,8 @@ const StoreProvider = ({ ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
     page: 'Home',
     projects: [],
-    project: {},
-    description: '',
+    skillSet: [],
+    filteredSkills: [],
   });
 
   return <Provider value={[state, dispatch]} {...props} />;

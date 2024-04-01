@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useStoreContext } from './store/store';
-import { SET_CONTENT } from './store/actions';
+import { SET_CONTENT, SET_SKILLSET } from './store/actions';
 import data from './data/data';
 
 import './App.css';
@@ -16,6 +16,15 @@ const App = () => {
   useEffect(() => {
     dispatch({ type: SET_CONTENT, content: data });
     console.log('state', state);
+    const skillSet = [];
+    data.projects.forEach((project) => {
+      project.tags.forEach((skill) => {
+        if (!skillSet.includes(skill.name) && skill.type === 'Skill') {
+          skillSet.push(skill.name);
+        }
+      });
+    });
+    dispatch({ type: SET_SKILLSET, skillSet });
   }, []);
 
   return (

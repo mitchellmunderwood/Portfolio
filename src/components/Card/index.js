@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 function Card(props) {
-  const { title, date, description, repoLink, badges } = props.content;
+  const { title, date, description, repoLink, tags } = props.content;
 
   return (
     <div className="col-md-4">
@@ -13,7 +13,7 @@ function Card(props) {
             <h3 className="project-title">{title}</h3>
             <small className="project-date">{date}</small>
             <p className="project-desc">{description}</p>
-            {badges.map((badge) => {
+            {tags.map((badge) => {
               return (
                 <p className="skill-badge" key={badge.name}>
                   {badge.name}
@@ -33,9 +33,9 @@ Card.propTypes = {
     date: PropTypes.string,
     description: PropTypes.string,
     repoLink: PropTypes.string,
-    badges: PropTypes.array,
+    tags: PropTypes.array,
+    selected: PropTypes.bool,
   }),
-  callback: PropTypes.func,
 };
 
 export default Card;
