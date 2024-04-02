@@ -1,16 +1,17 @@
 import { useStoreContext } from '../../store/store';
 import { TOGGLE_SKILL } from '../../store/actions';
+import './index.css';
 
 function SkillSelect() {
   const [state, dispatch] = useStoreContext();
 
   return (
-    <div>
-      <p>Project Includes:</p>
-      <form>
+    <div className="skill-select">
+      <p className="skill-select-title">Project Includes:</p>
+      <form className="skill-select-form">
         {state.skillSet.map((skill) => {
           return (
-            <label key={skill}>
+            <label className="skill-select-label" key={skill}>
               <input
                 type="radio"
                 name={skill}

@@ -1,0 +1,18 @@
+.skill-select {
+    padding-bottom: 30px;
+}
+
+.skill-select-title {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.skill-select-form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skill-select-label {
+    font-family: inherit;
+    padding-right: 5px;
+}
