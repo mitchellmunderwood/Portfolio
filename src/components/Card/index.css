@@ -47,10 +47,16 @@
   text-decoration: none;
 }
 
-.skill-badge {
-  display: inline;
+.skill-tag-container {
+  background-color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  display: block;
   padding: 5px;
-  margin-right: 5px;
+  margin: 2px;
   font-family: Helvetica;
   background-color: inherit;
   border: 1px solid #f0cd64;

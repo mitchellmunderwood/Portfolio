@@ -13,13 +13,15 @@ function Card(props) {
             <h3 className="project-title">{title}</h3>
             <small className="project-date">{date}</small>
             <p className="project-desc">{description}</p>
-            {tags.map((badge) => {
-              return (
-                <p className="skill-badge" key={badge.name}>
-                  {badge.name}
-                </p>
-              );
-            })}
+            <div className="skill-tag-container">
+              {tags.map((badge) => {
+                return (
+                  <p className="skill-tag" key={badge.name}>
+                    {badge.name}
+                  </p>
+                );
+              })}
+            </div>
           </div>
         </div>
       </a>
