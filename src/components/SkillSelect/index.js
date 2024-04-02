@@ -17,7 +17,6 @@ function SkillSelect() {
               type="button"
               name={skill}
               value={skill}
-              // checked={state.filteredSkills.includes(skill)}
               onClick={() => dispatch({ type: TOGGLE_SKILL, skill })}
             ></input>
           );
