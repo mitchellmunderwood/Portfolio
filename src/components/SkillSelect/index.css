@@ -12,7 +12,28 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.skill-select-label {
+.skill-select-button {
     font-family: inherit;
-    padding-right: 5px;
+    padding: 5px; 
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.selected {
+    background-color: #FFCA69; 
+    border: 1px solid #70582c;
+}
+
+/* .selected:hover {
+    background-color: #eeca88; 
+} */
+
+.unselected {
+    background-color: #FFF2CC;
+    border: 1px solid #837959;
+}
+
+.unselected:hover {
+    background-color: #FFCA69;
+    border: 1px solid #837959;
 }

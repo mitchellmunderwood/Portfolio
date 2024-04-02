@@ -11,16 +11,15 @@ function SkillSelect() {
       <form className="skill-select-form">
         {state.skillSet.map((skill) => {
           return (
-            <label className="skill-select-label" key={skill}>
-              <input
-                type="radio"
-                name={skill}
-                value={skill}
-                checked={state.filteredSkills.includes(skill)}
-                onClick={() => dispatch({ type: TOGGLE_SKILL, skill })}
-              ></input>
-              {skill}
-            </label>
+            // eslint-disable-next-line react/jsx-key
+            <input
+              className={'skill-select-button ' + (state.filteredSkills.includes(skill) ? 'selected' : 'unselected')}
+              type="button"
+              name={skill}
+              value={skill}
+              // checked={state.filteredSkills.includes(skill)}
+              onClick={() => dispatch({ type: TOGGLE_SKILL, skill })}
+            ></input>
           );
         })}
       </form>
