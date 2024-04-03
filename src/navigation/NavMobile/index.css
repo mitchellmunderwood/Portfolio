@@ -1,0 +1,64 @@
+.drawer-text {
+  width: 300px;
+}
+
+a {
+  color: #5f6368;
+}
+
+a:hover {
+  color: #5f6368;
+  /* text-decoration: none; */
+}
+
+h4 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.menu-button {
+  position: relative;
+  left: 15px;
+}
+
+.menu-icon {
+  z-index: 1;
+  background-color: none;
+  color: #40484F;
+}
+
+.MuiPaper-root {
+  background-color: #FFCA69;
+}
+
+.mdc-drawer__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:#FFCA69;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+.navDrawer-link {
+  font-size: 30px;
+  font-weight:600;
+  margin: 0px 5px;
+  padding-top: 0px;
+  text-decoration: none;
+  background-color:#FFCA69;
+}
+
+.navDrawer-link:hover {
+  color: #151516;
+  text-decoration: none;
+  background-color:#FFCA69;
+}
+
+.navDrawer-link-underline {
+  color: #151516;
+  text-decoration: underline;
+  background-color:#FFCA69;
+}

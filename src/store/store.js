@@ -1,5 +1,5 @@
 import { React, createContext, useContext, useReducer } from 'react';
-import { SET_CONTENT, SET_PAGE, SET_SKILLSET, TOGGLE_SKILL } from './actions';
+import { SET_CONTENT, SET_PAGE, SET_SKILLSET, TOGGLE_SKILL, TOGGLE_NAV_DRAWER } from './actions';
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -45,6 +45,13 @@ const reducer = (state, action) => {
         };
       }
 
+    case TOGGLE_NAV_DRAWER:
+      console.log('Reducer - toggle nav drawer');
+      return {
+        ...state,
+        navDrawer: !state.navDrawer,
+      };
+
     default:
       console.log('Reducer - Default, Return State:', action);
       return state;
@@ -54,9 +61,15 @@ const reducer = (state, action) => {
 const StoreProvider = ({ ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
     page: 'Home',
+    pages: [
+      { title: 'Home', id: 'home', link: '' },
+      { title: 'Portfolio', id: 'portfolio', link: 'portfolio' },
+      { title: 'Resume', id: 'resume', link: 'resume' },
+    ],
     projects: [],
     skillSet: [],
     filteredSkills: [],
+    navDrawer: false,
   });
 
   return <Provider value={[state, dispatch]} {...props} />;

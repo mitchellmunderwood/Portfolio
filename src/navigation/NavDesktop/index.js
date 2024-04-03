@@ -1,22 +1,16 @@
 /* eslint-disable react/jsx-key */
 import React from 'react';
 import './index.css';
-// import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { useStoreContext } from '../../store/store';
 import { SET_PAGE } from '../../store/actions';
 
-function NavBar() {
+function NavDesktop() {
   const [state, dispatch] = useStoreContext();
-  const pages = [
-    { title: 'Home', id: 'home', link: '' },
-    { title: 'Portfolio', id: 'portfolio', link: 'portfolio' },
-    { title: 'Resume', id: 'resume', link: 'resume' },
-  ];
 
   return (
-    <nav className="navBar">
-      {pages.map((page) => {
+    <nav className="navDesktop">
+      {state.pages.map((page) => {
         if (state.page === page.title) {
           return (
             <NavLink
@@ -50,7 +44,7 @@ function NavBar() {
         target="_blank"
         rel="noreferrer"
       >
-        LinkedIn -&gt;
+        LinkedIn-&gt;
       </a>
       <a
         className="nav-link"
@@ -59,14 +53,10 @@ function NavBar() {
         target="_blank"
         rel="noreferrer"
       >
-        Github -&gt;
+        Github-&gt;
       </a>
     </nav>
   );
 }
 
-// NavBar.propTypes = {
-//   toggle: PropTypes.boolean,
-// };
-
-export default NavBar;
+export default NavDesktop;

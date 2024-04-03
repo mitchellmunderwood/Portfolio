@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useStoreContext } from './store/store';
 import { SET_CONTENT, SET_SKILLSET } from './store/actions';
 import data from './data/data';
 
 import './App.css';
 
-import Navigation from './navigation/NavToggle/index';
+import Navigation from './navigation/Navigation/index';
 import Home from './pages/Home/index';
 import Portfolio from './pages/Portfolio/index';
 import Resume from './pages/Resume/index';
@@ -29,14 +29,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
-        <Route path="/" component={Navigation} />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/resume" component={Resume} />
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/portfolio" element={<Portfolio />} />
+          <Route exact path="/resume" element={<Resume />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
