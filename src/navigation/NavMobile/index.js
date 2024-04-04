@@ -29,7 +29,15 @@ export default function NavMobile() {
       >
         <MenuIcon className="menu-icon" />
       </IconButton>
-      <Drawer classname="drawer" anchor={'left'} open={state.navDrawer} onClose={toggleDrawer}>
+      <Drawer
+        PaperProps={{
+          sx: { backgroundColor: '#FFCA69' },
+        }}
+        classname="drawer"
+        anchor={'left'}
+        open={state.navDrawer}
+        onClose={toggleDrawer}
+      >
         <div className="drawer-macro" role="presentation" onClick={toggleDrawer} onKeyDown={toggleDrawer}>
           <div className="mdc-drawer__content">
             {state.pages.map((page) => {
