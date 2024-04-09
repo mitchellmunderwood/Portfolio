@@ -7,7 +7,7 @@ function SkillSelect() {
 
   return (
     <div className="skill-select">
-      <p className="skill-select-title">Project Includes:</p>
+      <p className="skill-select-title">filter projects by skill:</p>
       <form className="skill-select-form">
         {state.skillSet.map((skill) => {
           return (
